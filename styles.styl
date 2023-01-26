@@ -1,0 +1,83 @@
+filter()
+    -webkit-filter arguments
+    filter arguments
+
+body
+    background linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url(https://lolstatic-a.akamaihd.net/lolkit/1.1.6/resources/images/bg-default.jpg)
+    background-attachment fixed
+    margin 0
+    
+.back 
+    background rgba(0, 0, 0, 0.5)
+    min-height 100vh
+    padding-top 30px
+
+.back 
+    background rgba(0, 0, 0, 0.5)
+    min-height 100vh
+    padding-top 30px
+    .row
+        display grid
+        grid-template-columns repeat(3, 300px)
+        gap 30px
+        width 100vw
+        max-width 1000px
+        margin 0 auto
+        .col
+            width 300px
+            transition filter 0.3s
+            &:hover
+                cursor pointer
+                filter brightness(1.3) drop-shadow(5px 5px 20px black)
+            .previwe
+                width 300px
+                height 180px
+                position relative
+                img
+                    width 100%
+                    height 100%
+                    position absolute
+                    opacity 0
+                    transition opacity 0.2s
+                &:before
+                    content: ''
+                    width 100%
+                    height 100%
+                    position absolute
+                    z-index -1
+                    background url(../404_preview-320x180.jpg)
+            .colname 
+                background-color rgba(0,0,0,0.5)
+                height 70px
+                display flex
+                .headimg
+                    width 50px
+                    height 50px
+                    overflow  hidden
+                    border-radius 50%
+                    margin auto 10px
+                    position relative
+                    img
+                        width 100%
+                        height 100%
+                        position absolute
+                        opacity 0
+                        transition opacity 0.2s
+                    &:before
+                        content ''
+                        width 100%
+                        height 100%
+                        position absolute
+                        background url(../pleaceholder.png)
+                        background-size 100% 
+                        z-index -1
+                .namex
+                    color white
+                    margin auto 0
+                    .channel_name 
+                         width: 220px
+                         white-space nowrap
+                         text-overflow ellipsis
+                         overflow hidden
+                    div
+                         margin 5px 5px
