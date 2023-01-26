@@ -1,17 +1,38 @@
 body {
-  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://lolstatic-a.akamaihd.net/lolkit/1.1.6/resources/images/bg-default.jpg");
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("./bg-img.jpg");
   background-attachment: fixed;
   margin: 0;
 }
 .back {
   background: rgba(0,0,0,0.5);
   min-height: 100vh;
-  padding-top: 30px;
+  min-width: 100vw;
+  position: absolute;
 }
-.back {
-  background: rgba(0,0,0,0.5);
-  min-height: 100vh;
-  padding-top: 30px;
+.back .menu {
+  color: #fff;
+  height: 70px;
+  width: 100%;
+  position: fixed;
+  background: #292727;
+  top: 0;
+  text-align: center;
+  z-index: 1;
+}
+.back .menu h1 {
+  padding: 0;
+  margin: 0;
+  height: 40px;
+}
+.back .menu .title_a {
+  height: 30px;
+}
+.back .menu .title_a a {
+  margin: 0 10px;
+}
+.back .menu .title_a a:hover {
+  color: #4a62ce;
+  cursor: pointer;
 }
 .back .row {
   display: grid;
@@ -19,7 +40,8 @@ body {
   gap: 30px;
   width: 100vw;
   max-width: 1000px;
-  margin: 0 auto;
+  margin: 90px auto 0 auto;
+  justify-content: center;
 }
 .back .row .col {
   width: 300px;

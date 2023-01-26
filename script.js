@@ -1,9 +1,18 @@
 const clientId = 'vacansogf0srrzbeoorcsw3tpqqy69';
 const ouathToken = 'zgboixeuolof7ciceqyck9i8ps2get';
-const apiUrl = 'https://api.twitch.tv/helix/streams?game_id=21779&type=live&after=';
+const apiUrl = 'https://api.twitch.tv/helix/streams?game_id=21779&type=live';
 const apiUrl_user = 'https://api.twitch.tv/helix/users?';
 let cursor = '';
 let isLoading = false;
+let LANG = 'zh'
+
+function changeLang (lang){
+    $('.title').text(window.I18N[lang].TITLE);
+    $('.row').empty();
+    cursor = '';
+    LANG = lang;
+    appData()
+}
 
 $(document).ready(function() {
     appData();
@@ -18,7 +27,7 @@ $(document).ready(function() {
 
 function getStreamData(cb){
     $.ajax({
-        url: apiUrl + cursor,
+        url: apiUrl + '&language=' + LANG + '&after=' + cursor,
         type: 'get',
         headers: {
             'Authorization': 'Bearer ' + ouathToken,

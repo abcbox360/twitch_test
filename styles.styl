@@ -3,26 +3,42 @@ filter()
     filter arguments
 
 body
-    background linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url(https://lolstatic-a.akamaihd.net/lolkit/1.1.6/resources/images/bg-default.jpg)
+    background linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url(./bg-img.jpg)
     background-attachment fixed
     margin 0
-    
 .back 
     background rgba(0, 0, 0, 0.5)
     min-height 100vh
-    padding-top 30px
-
-.back 
-    background rgba(0, 0, 0, 0.5)
-    min-height 100vh
-    padding-top 30px
+    min-width 100vw
+    position absolute
+    .menu
+        color #fff
+        height 70px
+        width 100%
+        position fixed
+        background rgb(41, 39, 39)
+        top 0
+        text-align center
+        z-index 1
+        h1
+            padding 0
+            margin 0
+            height 40px
+        .title_a
+            height 30px
+            a
+                margin 0 10px
+            a:hover
+                color rgb(74, 98, 206)
+                cursor pointer
     .row
         display grid
         grid-template-columns repeat(3, 300px)
         gap 30px
         width 100vw
         max-width 1000px
-        margin 0 auto
+        margin 90px auto 0 auto
+        justify-content center
         .col
             width 300px
             transition filter 0.3s
