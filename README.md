@@ -1,8 +1,8 @@
-twitch LOL頻道列表   <a href="https://abcbox360.github.io/twitch_stream/" target="_blank">demo</a>
+## twitch LOL頻道列表   
+<a href="https://abcbox360.github.io/twitch_stream/" target="_blank">demo</a>
 
-<ul>
-<li>RWD效果，隨螢幕大小變換頻道顯示數量</li>
-<li>使用I18N切換語言</li>
-<li>使用gulp配合imagemin、minifyCSS、uglify壓縮檔案</li>
-<li>Lazy load功能,分段載入資料以減少等待時間</li>
-</ul>
+* RWD效果，隨螢幕大小變換頻道顯示數量</li>
+* 使用I18N切換語言</li>
+* 使用gulp配合imagemin、minifyCSS、uglify壓縮檔案</li>
+* Lazy load功能,分段載入資料以減少等待時間</li>
+
