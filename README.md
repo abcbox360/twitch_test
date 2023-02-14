@@ -1,4 +1,4 @@
-## twitch LOL頻道列表   
+## Twitch LOL頻道列表   
 <a href="https://abcbox360.github.io/twitch_stream/" target="_blank">demo</a>
 
 * RWD效果，隨螢幕大小變換頻道顯示數量</li>
